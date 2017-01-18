@@ -1,0 +1,5 @@
+<p>You have logged out as <%= session.delete(:user) %>.</p>
+
+<% content_for :footer_link do %>
+  <a href="/">Return to the Homepage</a>
+<% end %>

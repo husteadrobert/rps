@@ -1,0 +1,7 @@
+Welcome to Rock, Paper, Scissors!
+
+Create a User and try to beat one of three different AI opponents!  Each one has their own individual play style, so try to figure it out what they're thinking and aim for the longest winning streak possible.
+
+Those with the longest winning streaks are honored on the Hall of Fame!
+
+Good luck!

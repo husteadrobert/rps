@@ -1,0 +1,15 @@
+<h1>Hall of Fame</h1>
+
+<ol>
+  <% @hall.each do |data| %>
+    <%== display_hall(data) %>
+  <% end %>
+</ol>
+
+<form method="post" action="/reset_hall">
+  <button type="submit">Reset to Defaults</button>
+</form>
+
+<% content_for :footer_link do %>
+  <a href="/">Return to the Homepage</a>
+<% end %>

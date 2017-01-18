@@ -1,0 +1,28 @@
+<h2><%= display_result(session[:human_move], session[:computer_move]) %></h2>
+<h2><img src="<%= session.delete(:human_move) %>.jpg"> vs <img src="<%= session.delete(:computer_move) %>.jpg"></h2>
+
+<% if session[:hall] %>
+  <h3><%= session.delete(:hall) %></h3>
+<% end %>
+
+
+<p>Human: <%= session[:human] %> / Computer: <%= session[:computer] %></p>
+
+<p>Current Win Streak: <%= session[:winning_streak] %></p>
+
+
+
+<p><a href="/select_throw">Play Again</a></p>
+<p><a href="/opponents/select">Change Opponent</a></p>
+<a href="/">Return to the Homepage</a>
+
+
+<% unless @log.human_history.empty? %>
+  <h3>Current History</h3>
+  <p>----------------------------------</p>
+  <% @log.each do |human_move, computer_move| %>
+    <ul>
+      <li><%== display_history(human_move, computer_move) %></li>
+    </ul>
+  <% end %>
+<% end %>

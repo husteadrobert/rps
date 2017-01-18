@@ -1,0 +1,16 @@
+<h1>Select your Opponent</h1>
+
+<img src="/johnny.jpg"> <img src="/blue.jpg"> <img src="/hal.jpg">
+<ul>
+  <% @ai_list.each do |name| %>
+  <li>
+    <form class="inline" method="post" action="/<%= name %>/select">
+      <button type="submit"><%= name %></button>
+    </form> 
+  </li>
+  <% end %>
+</ul>
+
+<% content_for :footer_link do %>
+  <a href="/">Return to the Homepage</a>
+<% end %>

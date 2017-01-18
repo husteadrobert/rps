@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <main>
+      <%== yield %>
+    </main>
+    <% if session[:message] %>
+      <p><em><%= session.delete(:message) %></em></p>
+    <% end %>
+    <p><%== yield_content :footer_link %></p>
+  </body>
+</html>

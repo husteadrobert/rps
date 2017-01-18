@@ -1,0 +1,10 @@
+---
+- name: Mark
+  score: 3
+  opponent: Johnny 5
+- name: John
+  score: 2
+  opponent: Deep Blue
+- name: Sally
+  score: 1
+  opponent: HAL

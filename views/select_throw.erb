@@ -1,0 +1,27 @@
+<h1>Select your Symbol</h1>
+
+<ul>
+  <% @move_list.each do |move| %>
+  <li>
+    <form class="inline" method="post" action="/human_move/<%= move %>">
+      <button type="submit"><img src="<%= move %>.jpg"></button>(<%= move %>)
+    </form> 
+  </li>
+  <% end %>
+</ul>
+
+
+<% unless @log.human_history.empty? %>
+  <h3>Current History</h3>
+  <p>----------------------------------</p>
+  <% @log.each do |human_move, computer_move| %>
+    <ul>
+      <li><%== display_history(human_move, computer_move) %></li>
+    </ul>
+  <% end %>
+  <p>----------------------------------</p>
+<% end %>
+
+<% content_for :footer_link do %>
+  <a href="/">Return to the Homepage</a>
+<% end %>

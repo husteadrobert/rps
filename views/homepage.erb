@@ -1,0 +1,17 @@
+<h1>Welcome to Rock Paper Scissors!</h1>
+<% @content.split("\n").each do |sentence| %>
+  <p><%= sentence %></p>
+<% end %>
+
+<% unless session[:user] %>
+  <p><a href="/opponents/select">Sign in as Guest</a></p>
+  <p><a href="/newuser">Create new User</a></p>
+  <p><a href="/signin">Log In</a></p>
+<% else %>
+  <p><em>Signed in as <%= "#{session[:user]}" %></em></p>
+  <p><a href="/opponents/select">Select Opponent</a></p>
+  <a href="/users/logout">Log Out</a>
+<% end %>
+
+<p><a href="/hall_of_fame">Hall of Fame</a></p>
+<p><a href="/about">About</a></p>

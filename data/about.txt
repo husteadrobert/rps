@@ -1,0 +1,10 @@
+This web app was made to practice the skills I have learned in course 170: Web Development at <a href="https://launchschool.com">Launch School</a>.
+
+This basic purpose of this web app was for me to create something using the Sinatra framework for Ruby, while demonstrating the various skills I had learned.  The layout of the pages themselves is not particularly pleasing to the eye, but that is mostly a result of not having studied HTML or CSS to a degree beyond the basics.  Moreover, this app is hosted on Heroku, so new users are not permanent.  For a future improvement, I'd like to make new users permanent and change the layout to be more appealing.
+
+Launch School is an online program aimed at mastery based education for those who want to learn how to become professional web application developers.
+If you're interested in learning how to program, I invite you to check out their web page <a href="https://launchschool.com">HERE</a>.  I've been a student for about 4 months now, and I feel their approach to mastery (as opposed to just following tutorials to build a 'portfolio') is a perfect fit for a person like me who wants to make a future career out of programming.
+
+For those interested, you can visit my Github account <a href="https://github.com/husteadrobert">HERE</a>.
+
+Any questions, comments, or bugs?  Feel free to send me an email at husteadrobert@gmail.com

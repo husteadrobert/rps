@@ -1,0 +1,19 @@
+<h1>New User Registration</h1>
+<form method="post" action="/users/newuser">
+  <div>
+    <label for="username">Username:</label>
+    <input name="username" id="username" value="<%= params[:username] %>" />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input name="password" id="password" value="" />
+  </div>
+  <button type="submit">Sign In</button>
+</form>
+
+<p>(Please note that due to Heroku's ephemeral file system, new user credentials only last for about 24 hours.
+you'll need to create a new user each time Heroku refreshes it's file systems.)</p>
+
+<% content_for :footer_link do %>
+  <a href="/">Return to the Homepage</a>
+<% end %>
